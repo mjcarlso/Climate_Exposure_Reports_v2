@@ -7,7 +7,7 @@ output:
 params:
   name: 
     label: "Park Name"
-    value: `r params$name`
+    value: FOUN
     input: select
     choices: [FOUN, TUZI, MOCA]
 toc: true
@@ -21,7 +21,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r Initials, echo=FALSE, message=FALSE, warning=FALSE}
 rm(list = ls())
 
-library(stars);library(dplyr);library(ggplot2);library(ggthemes);library(viridis);library(here);library(ggrepel);library(rlang);library(units);library(knitr);library(purrr);library(glue); library(gt); library(officer);library(officedown);library(dplyr); library(abind); library(sf)
+library(stars);library(dplyr);library(ggplot2);library(viridis);library(here);library(ggrepel);library(rlang);library(units);library(knitr);library(glue); library(gt); library(officer);library(officedown);library(dplyr); library(abind); library(sf)
+
 
 ```
 
@@ -91,7 +92,7 @@ The Standardized Precipitation Evaporation Index (SPEI) integrates temperature a
 
 **Wildfire**
 
-Wildfire is a natural part of many forest, woodland, and grassland ecosystems. Excessive fire, however, can transform ecosystems, kill people, and damage infrastructure. Climate change is intensifying the heat that drives wildfire (Jolly et al. 2015) and altering the distribution and density of vegetation that comprises the fuel for wildfires (Gonzalez et al. 2010). These effects combine with the buildup of coarse woody debris and understory trees from decades of suppression of all fires, even natural ones (Agee and Skinner 2005). The effects of climate change on wildfire vary across landscapes. For areas where projected climate change increases fire risk, buildings, cultural landscapes, and other infrastructure are vulnerable to burning and destruction.
+Wildfire is a natural part of many forest, woodland, and grassland ecosystems. Excessive fire, however, can transform ecosystems, kill people, and damage infrastructure. Climate change is intensifying the heat that drives wildfire (Jolly et al. 2015) and altering the distribution and density of vegetation that comprises the fuel for wildfires (Westerling et al. 2016). These effects combine with the buildup of coarse woody debris and understory trees from decades of suppression of all fires, even natural ones (Agee and Skinner 2005). The effects of climate change on wildfire vary across landscapes. For areas where projected climate change increases fire risk, buildings, cultural landscapes, and other infrastructure are vulnerable to burning and destruction.
 
 **Plant-available water**
 
@@ -157,8 +158,6 @@ Dethier, E.N., S.L. Sartain, C.E. Renshaw, and F.J. Magilligan. 2020. Spatially 
 
 Easterling, D. R., K. E. Kunkel, J. R. Arnold, T. Knutson, A. N. LeGrande, L. R. Leung, R. S. Vose, D. E. Waliser, and M. F. Wehner. 2017. Precipitation change in the United States. In U.S. Global Change Research Program (USGRP). Climate Science Special Report. Fourth National Climate Assessment, Volume I. [Wuebbles, D.J., D.W. Fahey, K.A. Hibbard, D.J. Dokken, B.C. Stewart, and T.K. Maycock (eds.)] USGCRP, Washington, DC.
 
-Gonzalez, P., R. P. Neilson, J. M. Lenihan, and R. J. Drapek. 2010. Global patterns in the vulnerability of ecosystems to vegetation shifts due to climate change. Global Ecology and Biogeography 19:755-768.
-
 Havel, J. E., K. E. Kovalenko, S. M. Thomaz, S. Amalfitano, and L. B. Kats. 2015. Aquatic invasive species: challenges for the future. Hydrobiologia 750:147-170. <https://doi.org/10.1007/s10750-014-2166-0>
 
 Hellmann JJ, JE Byers, BG Bierwagen, and JS Dukes. 2008. Five potential consequences of climate change for invasive species. Conserv Biol 22:534-543. 
@@ -189,7 +188,11 @@ Thoma DP, MT Tercek, EW Schweiger, SM Munson, JE Gross, and ST Olliff. 2020. Wat
 
 Vissichelli, M. 2018. Invasive species impacts on federal infrastructure. National Invasive Species Council Secretariat, Washington, DC. <https://www.doi.gov/sites/doi.gov/files/uploads/invasive_species_impacts_on_federal_infrastructure.pdf>
 
-Wehner, M. F., J. R. Arnold, T. Knutson, K. E. Kunkel, and A. N. LeGrande. 2017. Droughts, floods, and wildfires. In: Climate Science Special Report: Fourth National Climate Assessment, Volume I [Wuebbles, D.J., D.W. Fahey, K.A. Hibbard, D.J. Dokken, B.C. Stewart, and T.K. Maycock (eds.)]. U.S. Global Change Research Program, Washington, DC, USA, pp. 231-256.
+Vose, RS, S Applequist, M Squires, I Durre, MJ Menne, CN Williams Jr, C Fenimore, K Gleason, and D Arndt. 2014. Improved Historical Temperature and Precipitation Time Series for U.S. Climate Divisions. Journal of Applied Meteorology and Climatology 54:5.
+
+Wehner, M. F., J. R. Arnold, T. Knutson, K. E. Kunkel, and A. N. LeGrande. 2017. Droughts, floods, and wildfires. In: Climate Science Special Report: Fourth National Climate Assessment, Volume I [Wuebbles, D.J., D.W. Fahey, K.A. Hibbard, D.J. Dokken, B.C. Stewart, and T.K. Maycock (eds.)]. U.S. Global Change Research Program, Washington, DC, USA, pp. 231-256.0178.
+
+Westerling, A.L., 2016. Increasing western US forest wildfire activity: Sensitivity to changes in the timing of spring. Philosophical Transactions of the Royal Society B: Biological Sciences, 371(1696), p.2015
 
 Yang, Q., H. Tian, M. A. M. Friedrichs, M. Liu, X. Li, and J. Yang. 2015. Hydrological Responses to Climate and Land-Use Changes along the North American East Coast: A 110-Year Historical Reconstruction. JAWRA Journal of the American Water Resources Association 51:47-67. 
 
