@@ -234,20 +234,20 @@ Yang, Q., H. Tian, M. A. M. Friedrichs, M. Liu, X. Li, and J. Yang. 2015. Hydrol
 
 Projected changes in climate metrics presented in this report. Change values are the difference between the climate metric's future-period (2025-2055) average and the historical-period (1979-2012) average.
 
-|                                                 | Warm Wet                          | Hot Dry | Historical |
-|-------------------------------------------------|-----------------------------------|---------|------------|
-| **Change in annual average temperature (°F)**   | `r Exposure.Data%>%DeltaTavg.CF1` |         |            |
-| **Change in annual precipitation (in)**         | `r Exposure.Data%>%DeltaPrcp.CF1` |         |            |
-| **Change in Days / \> 99th Tmax / year**        |                                   |         |            |
-| **Change in Days with 'dangerous' heat index**  |                                   |         |            |
-| **50-year precipitation event return interval** |                                   |         |            |
-| **50-year precipitation event (in)**            |                                   |         |            |
-| **Change in days \> 99th precipitation / year** |                                   |         |            |
-| **Average drought duration**                    |                                   |         |            |
-| **Drought-free interval**                       |                                   |         |            |
-| **Drought severity**                            |                                   |         |            |
-| **Change in annual average water deficit**      |                                   |         |            |
-| **Change in annual actual evapotranspiration**  |                                   |         |            |
+|                                                 | Warm Wet                            | Hot Dry                             | Historical                        |
+|----------------------------|-------------------|-------------|-------------|
+| **Change in annual average temperature (°F)**   | `r Exposure.Data%>%DeltaTavg.CF1`   | `r Exposure.Data%>%DeltaTavg.CF2`   | `r D_Annual%>%TavgF[1]`           |
+| **Change in annual precipitation (in)**         | `r Exposure.Data%>%DeltaPrcp.CF1`   | `r Exposure.Data%>%DeltaPrcp.CF2`   | `r D_Annual%>%PrecpIn[1]`         |
+| **Change in Days / \> 99th Tmax / year**        | `r D_Annual%>%Tmax99[2]`            | `r D_Annual%>%Tmax99[3]`            | `r D_Annual%>%Tmax99[1]`          |
+| **Change in Days with 'dangerous' heat index**  | `r Exposure.Data%>%HI.Dan.CF1`      | `r Exposure.Data%>%HI.Dan.CF2`      | `r D_Annual%>%HI.Dan[1]`          |
+| **50-year precipitation event return interval** | `r Exposure.Data%>%CF1_return.year` | `r Exposure.Data%>%CF2_return.year` | 50                                |
+| **50-year precipitation event (in)**            | `r Exposure.Data%>%CF1_return50`    | `r Exposure.Data%>%CF2_return50`    | `r Exposure.Data%>%Hist_Return50` |
+| **Change in days \> 99th precipitation / year** | `r D_Annual%>%OverPrecip99[2]`      | `r D_Annual%>%OverPrecip99[3]`      | `r D_Annual%>%OverPrecip99[1]`    |
+| **Average drought duration**                    | `r Drought.char%>%Duration[2]`      | `r Drought.char%>%Duration[3]`      | `r Drought.char%>%Duration[1]`    |
+| **Drought-free interval**                       | `r Drought.char%>%Drt.Free[2]`      | `r Drought.char%>%Drt.Free[3]`      | `r Drought.char%>%Drt.Free[1]`    |
+| **Drought severity**                            | `r Drought.char%>%Severity[2]`      | `r Drought.char%>%Severity[3]`      | `r Drought.char%>%Severity[1]`    |
+| **Change in annual average water deficit**      | `r Exposure.Data%>%CF1.WBdelta`     | `r Exposure.Data%>%CF2.WBdelta`     | `r Exposure.Data%>%Hist.meanWB`   |
+| **Change in annual actual evapotranspiration**  |                                     |                                     |                                   |
 
 ------------------------------------------------------------------------
 
