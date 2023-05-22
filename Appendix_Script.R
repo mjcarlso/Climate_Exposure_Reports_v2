@@ -136,3 +136,10 @@ Appendix1[3] <- c(D_Annual$TavgF[1],D_Annual$PrcpIn[1],D_Annual$Tmax99[1],D_Annu
 
 #write.csv(Appendix1, paste0(Output.directory,"-",SiteID,"-Appendix1.csv"))
 
+
+Exposure.Data$AET1 <- mean(AnnualWB$sum_aet.in[which(AnnualWB$year>=Yr-Range/2 & AnnualWB$year<= Yr+Range/2 & 
+                                                       AnnualWB$CF == CFs[1])]) - mean(AnnualWB$sum_aet.in[which(AnnualWB$year<=2012)])
+Exposure.Data$AET2 <- mean(AnnualWB$sum_aet.in[which(AnnualWB$year>=Yr-Range/2 & AnnualWB$year<= Yr+Range/2 & 
+                                                       AnnualWB$CF == CFs[2])]) - mean(AnnualWB$sum_aet.in[which(AnnualWB$year<=2012)])
+Exposure.Data$AET3 <- mean(AnnualWB$sum_aet.in[which(AnnualWB$year<=2012)])
+

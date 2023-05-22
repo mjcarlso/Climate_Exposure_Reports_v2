@@ -247,7 +247,7 @@ Projected changes in climate metrics presented in this report. Change values are
 | **Drought-free interval**                       | `r Drought.char%>%Drt.Free[2]`      | `r Drought.char%>%Drt.Free[3]`      | `r Drought.char%>%Drt.Free[1]`    |
 | **Drought severity**                            | `r Drought.char%>%Severity[2]`      | `r Drought.char%>%Severity[3]`      | `r Drought.char%>%Severity[1]`    |
 | **Change in annual average water deficit**      | `r Exposure.Data%>%CF1.WBdelta`     | `r Exposure.Data%>%CF2.WBdelta`     | `r Exposure.Data%>%Hist.meanWB`   |
-| **Change in annual actual evapotranspiration**  |                                     |                                     |                                   |
+| **Change in annual actual evapotranspiration**  | `r Exposure.Data%>%AET1`            | `r Exposure.Data%>%AET2`            | `r Exposure.Data%>%AET3`          |
 
 ------------------------------------------------------------------------
 
