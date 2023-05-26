@@ -19,7 +19,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r Initials, echo=FALSE, message=FALSE, warning=FALSE}
-rm(list = ls())
 
 library(stars);library(dplyr);library(ggplot2);library(viridis);library(here);library(ggrepel);library(rlang);library(units);library(knitr);library(glue); library(gt); library(officer);library(officedown);library(dplyr); library(abind); library(sf)
 
@@ -235,7 +234,7 @@ Yang, Q., H. Tian, M. A. M. Friedrichs, M. Liu, X. Li, and J. Yang. 2015. Hydrol
 Projected changes in climate metrics presented in this report. Change values are the difference between the climate metric's future-period (2025-2055) average and the historical-period (1979-2012) average.
 
 |                                                 | Warm Wet                            | Hot Dry                             | Historical                        |
-|----------------------------|-------------------|-------------|-------------|
+|---------------------|-----------------|-----------------|-----------------|
 | **Change in annual average temperature (°F)**   | `r Exposure.Data%>%DeltaTavg.CF1`   | `r Exposure.Data%>%DeltaTavg.CF2`   | `r D_Annual%>%TavgF[1]`           |
 | **Change in annual precipitation (in)**         | `r Exposure.Data%>%DeltaPrcp.CF1`   | `r Exposure.Data%>%DeltaPrcp.CF2`   | `r D_Annual%>%PrecpIn[1]`         |
 | **Change in Days / \> 99th Tmax / year**        | `r D_Annual%>%Tmax99[2]`            | `r D_Annual%>%Tmax99[3]`            | `r D_Annual%>%Tmax99[1]`          |

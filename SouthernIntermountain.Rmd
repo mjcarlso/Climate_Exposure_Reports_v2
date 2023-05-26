@@ -18,12 +18,11 @@ theme: united
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r Initials, echo=FALSE, message=FALSE, warning=FALSE}
-rm(list = ls())
+```{r Initials, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 
-library(stars);library(dplyr);library(ggplot2);library(viridis);library(here);library(ggrepel);library(rlang);library(units);library(knitr);library(glue); library(gt); library(officer);library(officedown);library(dplyr); library(abind); library(sf)
+library(stars);library(dplyr);library(ggplot2);library(viridis);library(here);library(ggrepel);library(rlang);library(units);library(knitr);library(glue); library(gt); library(officer);library(officedown);library(dplyr); library(abind); library(sf);library(rmarkdown)
 
-
+params$name
 ```
 
 # Introduction
@@ -48,6 +47,8 @@ Temperatures in `r params$name` have already increased significantly (Figure 1.)
 ![**Figure 1.** Historical trends in annual average temperature (upper plot) and annual total precipitation (lower plot) for `r params$name` from 1895-2022. Black points show yearly values while the red line represents the 10-year rolling average. Blue lines are linear regressions for the entire period recod, up to 1970, and 1970-present. Solid lines are significant trends (i.e., p\<0.05); dashed lines are not statistically significant.](data/){width="300"}
 
 ![**Figure 2.** Maps showing observed changes in metrics of extreme precipitation by region, including (upper left) the maximum daily precipitation in consecutive 5-year blocks, (upper right) the amount of precipitation falling in daily events that exceed the 99th percentile of all non-zero precipitation days, (lower left) the number of 2-day events with a precipitation total exceeding the largest 2-day amount that is expected to occur, on average, only once every 5 years, as calculated over 1901--2016, and (lower right) the number of 2-day events with a precipitation total exceeding the largest 2-day amount that is expected to occur, on average, only once every 5 years, as calculated over 1958--2016. The numerical value is the percent change over the entire period, either 1901--2016 or 1958--2016. The percentages are first calculated for individual stations, then averaged over 2° latitude by 2° longitude grid boxes, and finally averaged over each NCA4 region. (Source: Easterling et al. 2017; Figure source: CICS-NC and NOAA NCEI).](data/TotalAnnualPrecip.png){width="300"}
+
+[[1]](#_ftnref1) Data: NClimGrid (Vose et al. 2014). Analysis: CCRP for 1895-2022 data.
 
 # Projected climate change
 
@@ -229,4 +230,4 @@ Projected changes in climate metrics presented in this report. Change values are
 
 ------------------------------------------------------------------------
 
-[[1]](#_ftnref1) Data: NClimGrid (Vose et al. 2014). Analysis: CCRP for 1895-2022 data.
+
