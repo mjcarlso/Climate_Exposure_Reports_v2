@@ -1,7 +1,7 @@
 library(here); library(ggplot2);  library(data.table); library(lubridate); library(dplyr); library(openxlsx); library(tidyr)
 
 
-rm(list = ls())
+#rm(list = ls())
 
 
 #SiteID = "BIBE"  
@@ -9,8 +9,8 @@ rm(list = ls())
 #Future.data <- "C:/Users/mjcarlson/OneDrive - DOI/Desktop/GRA Work/2023_BIBE/"
 #Output.directory <- "C:/Users/mjcarlson/OneDrive - DOI/Desktop/GRA Work/2023_BIBE/Output/"
 
-Hist.data <- paste0("data/2023_", params$name, "/", params$name, "-Historical/")
-Future.data <- paste0("data/2023_", params$name,"/")
+Hist.data <- paste0("data/", params$name, "/", params$name, "-Historical/")
+Future.data <- paste0("data/", params$name,"/")
 Output.directory <- paste0("data/2023_", params$name, "/Output/")
 
 CF_selected <- "WarmWet_HotDry" #Select your CF by commenting out set you do not wish to use
