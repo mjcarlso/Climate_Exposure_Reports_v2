@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r Initials, echo=FALSE, message=FALSE, warning=FALSE}
 
-library(stars);library(dplyr);library(ggplot2);library(viridis);library(here);library(ggrepel);library(rlang);library(units);library(knitr);library(glue); library(gt); library(officer);library(officedown);library(dplyr); library(abind); library(sf);library(shiny)
+library(stars);library(dplyr);library(ggplot2);library(viridis);library(here);library(ggrepel);library(rlang);library(units);library(knitr);library(glue); library(gt); library(officer);library(officedown); library(abind); library(sf);library(shiny); library(here); library(data.table); library(lubridate); library(openxlsx); library(tidyr)
 
 
 ```

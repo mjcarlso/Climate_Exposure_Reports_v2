@@ -1,4 +1,4 @@
-library(here); library(ggplot2);  library(data.table); library(lubridate); library(dplyr); library(openxlsx); library(tidyr)
+#library(here); library(ggplot2);  library(data.table); library(lubridate); library(dplyr); library(openxlsx); library(tidyr)
 
 
 #rm(list = ls())
@@ -109,7 +109,7 @@ Exposure.Data$CF1.WBdelta <- mean(AnnualWB$sum_d.in[which(AnnualWB$year>=Yr-Rang
 Exposure.Data$CF2.WBdelta <- mean(AnnualWB$sum_d.in[which(AnnualWB$year>=Yr-Range/2 & AnnualWB$year<= Yr+Range/2 & 
                                                             AnnualWB$CF == CFs[2])]) - Exposure.Data$Hist.meanWB
 
-write.csv(Exposure.Data, paste0(Output.directory,"-",SiteID,"-ExposureData.csv"))
+#write.csv(Exposure.Data, paste0(Output.directory,"-",SiteID,"-ExposureData.csv"))
 
 
 # Table for Appendix 1
