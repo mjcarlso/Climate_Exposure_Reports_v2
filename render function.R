@@ -1,5 +1,9 @@
 # Rendering rmarkdown Exposure Reports
 
+# Choice of parks
+choices <- c("FOUN", "TUZI")
+
+
 # Function
 
 render_one <- function(name) {
@@ -11,10 +15,8 @@ render_one <- function(name) {
   )
 }
 
-# Iterate
 
-# choice of parks
-choices <- c("FOUN", "TUZI")
+# Iterate
 
 for (name in choices) {
   render_one(name)
