@@ -4,14 +4,14 @@ library(here); library(ggplot2);  library(data.table); library(lubridate); libra
 #rm(list = ls())
 
 
-#SiteID = "BIBE"  
+#SiteID defined in main markdown  
 #Hist.data <- "C:/Users/mjcarlson/OneDrive - DOI/Desktop/GRA Work/2023_BIBE/BIBE-Historical/"
 #Future.data <- "C:/Users/mjcarlson/OneDrive - DOI/Desktop/GRA Work/2023_BIBE/"
 #Output.directory <- "C:/Users/mjcarlson/OneDrive - DOI/Desktop/GRA Work/2023_BIBE/Output/"
 
 Hist.data <- paste0("data/", params$name, "/", params$name, "-Historical/")
 Future.data <- paste0("data/", params$name,"/")
-Output.directory <- paste0("data/2023_", params$name, "/Output/")
+#Output.directory <- paste0("data/", params$name, "/Output/")
 
 CF_selected <- "WarmWet_HotDry" #Select your CF by commenting out set you do not wish to use
 # CF_selected_updates <- "WarmDry_HotWet" #Select your CF by commenting out set you do not wish to use

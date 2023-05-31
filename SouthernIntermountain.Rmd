@@ -9,7 +9,7 @@ params:
     label: "Park Name"
     value: FOUN
     input: select
-    choices: [FOUN, TUZI, MOCA]
+    choices: [FOUN, TUZI]
 toc: true
 theme: united
 ---
@@ -44,7 +44,7 @@ Temperatures in `r params$name` have already increased significantly (Figure 1.)
 
 ```{r, echo=FALSE}
 #Need to update with figure name/location
-#fig1 <- paste0("data/", params$name, "/")
+fig1 <- paste0("data/", params$name, "/MACA-map-zoomed-in.png")
 ```
 ![**Figure 1.** Historical trends in annual average temperature (upper plot) and annual total precipitation (lower plot) for `r params$name` from 1895-2022. Black points show yearly values while the red line represents the 10-year rolling average. Blue lines are linear regressions for the entire period recod, up to 1970, and 1970-present. Solid lines are significant trends (i.e., p\<0.05); dashed lines are not statistically significant.](`r fig1`){width="400"}
 
