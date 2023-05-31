@@ -4,7 +4,7 @@
 
 render_one <- function(name) {
   rmarkdown::render(
-    'SouthernIntermountain.Rmd',
+    'CCExposureReport.Rmd',
     output_file = paste0('Climate Change Exposure - ', name, '.docx'),
     params = list(name = name),
     envir = parent.frame()
